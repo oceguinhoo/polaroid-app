@@ -1,0 +1,20 @@
+settings = {
+    orientation = {
+        default = "portrait",
+        supported = { "portrait" }
+    },
+    android = {
+        usesPermissions = {
+            "android.permission.CAMERA",
+            "android.permission.READ_EXTERNAL_STORAGE",
+            "android.permission.WRITE_EXTERNAL_STORAGE",
+        },
+    },
+    iphone = {
+        plist = {
+            NSCameraUsageDescription = "Este app usa a câmera para tirar fotos.",
+            NSPhotoLibraryUsageDescription = "Este app acessa a galeria para pegar fotos.",
+            NSPhotoLibraryAddUsageDescription = "Este app salva as fotos com moldura.",
+        }
+    }
+}
